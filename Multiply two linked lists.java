@@ -16,18 +16,4 @@ class Solution {
         }
         return num;
     }
-
-    public static Node createLinkedList(int[] values) {
-        if (values.length == 0) return null;
-        
-        Node head = new Node(values[0]);
-        Node current = head;
-        
-        for (int i = 1; i < values.length; i++) {
-            current.next = new Node(values[i]);
-            current = current.next;
-        }
-        
-        return head;
-    }
 }
